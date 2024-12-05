@@ -1,2 +1,4 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+Computer-Vision-QT/lib/x64/vc16/bin/opencv_world4100d.dll filter=lfs diff=lfs merge=lfs -text
+Computer-Vision-QT/lib/x64/vc16/bin/opencv_world4100d.pdb filter=lfs diff=lfs merge=lfs -text
