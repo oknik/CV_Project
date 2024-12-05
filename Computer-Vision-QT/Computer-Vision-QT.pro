@@ -43,14 +43,15 @@ CONFIG(debug, debug|release) {
     contains(DEFINES, WIN64): message("Debugging on Win64")
     else: {
         message("Debugging on Win32")
-        # LIBS += -L$$(PWD)/../Computer-Vision-QT/lib/win32/Debug/  -lCV_DLL
-        LIBS += -LD:\Desktop\Computer-Vision-QT\Computer-Vision-QT\lib\win32\Debug   -lCV_DLL
+        LIBS += -L$$(PWD)/../Computer-Vision-QT/lib/win32/Debug/  -lCV_DLL
+        # LIBS += -LD:/Desktop/CV_Project/Computer-Vision-QT/lib/win32/Debug -lCV_DLL
     }
 } else {
     # Not in debug mode (i.e., release mode)
     contains(DEFINES, WIN64): message("Releasing on Win64")
     else: {
         message("Releasing on Win32")
-        LIBS += -L$$(PWD)/../Computer-Vision-QT/lib/win32/Release/  -lCV_DLL
+        LIBS += -L$$(PWD)/../Computer-Vision-QT/lib/win32/Release/  -l CV_DLL
+        # LIBS += -LD:/Desktop/CV_Project/Computer-Vision-QT/lib/win32/Release -l CV_DLL
     }
 }
